@@ -132,7 +132,14 @@ export default function Contact() {
                 <p className="text-body text-text-secondary">Tell us about your business and payment needs</p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-8">
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+                onSubmit={handleSubmit} 
+                className="space-y-8"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-small text-text-secondary mb-3">

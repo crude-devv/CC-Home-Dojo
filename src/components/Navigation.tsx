@@ -10,8 +10,14 @@ export default function Navigation() {
       <div className="container-wide">
         <div className="flex items-center justify-between py-6">
           {/* Logo */}
-          <div className="text-2xl font-serif text-charcoal">
-            Crude Capital Merchants
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-slate-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">CC</span>
+            </div>
+            <div className="text-2xl font-serif text-charcoal">
+              Crude Capital Merchants
+            </div>
+            {/* Replace with: <img src="/images/logos/crude-capital-logo.svg" alt="Crude Capital" className="h-10 w-auto" /> */}
           </div>
 
           {/* Desktop Navigation */}
